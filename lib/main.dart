@@ -64,6 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 // primer commit de la rama develop.
+// segundo commit de la rama develop.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
             const SizedBox(height: 10,),
             const Text('Estas en el:'),bodyNav[_indiceActual],
