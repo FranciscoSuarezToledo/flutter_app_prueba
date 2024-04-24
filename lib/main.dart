@@ -63,7 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
       _counter--;
     });
   }
-
+// primer commit de la rama develop.
+//commit generado desde la rama creada desde un commit anterior, en este caso el primer commit de develop.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,10 +80,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
-            SizedBox(height: 10,),
-            Text('Estas en el:'),bodyNav[_indiceActual],
+            const SizedBox(height: 10,),
+            const Text('Estas en el:'),bodyNav[_indiceActual],
           ],
         ),
       ),
@@ -93,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
             _indiceActual = nuevoIndice;
           });
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
           BottomNavigationBarItem(label: 'Menu', icon: Icon(Icons.menu)),
           BottomNavigationBarItem(label: 'Profile', icon: Icon(Icons.person)),
@@ -105,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.end,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               width: 15,
             ),
             FloatingActionButton(
@@ -114,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
               tooltip: 'Increment',
               child: const Icon(Icons.add),
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             FloatingActionButton(
